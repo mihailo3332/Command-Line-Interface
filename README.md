@@ -8,16 +8,11 @@ systems.\
 Although simplified, it supports many of the same fundamental concepts
 and features.
 
-The interpreter reads and executes commands one by one, either: -
-entered **interactively** by the user, or\
-- provided as a **batch file** stored in a text file.
+The interpreter reads and executes commands one by one, either:
+entered **interactively** by the user, or provided as a **batch file** stored in a text file.
 
 It also supports **redirection** and **pipes**, just like in real
 operating systems.\
-The implementation should be written in **C++**.
-
-If something isn't precisely defined, you should make a reasonable
-assumption, document it clearly, and base your solution on it.
 
 ------------------------------------------------------------------------
 
