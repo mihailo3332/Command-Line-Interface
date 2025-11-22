@@ -12,7 +12,7 @@ The interpreter reads and executes commands one by one, either:
 entered **interactively** by the user, or provided as a **batch file** stored in a text file.
 
 It also supports **redirection** and **pipes**, just like in real
-operating systems.\
+operating systems.
 
 ------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ operating systems.\
 ### 🧠 Basic Behavior
 
 The command-line interpreter runs as an **interactive console
-program**.\
+program**.
 The user types commands, and the program prints output to the screen.
 
 The interpreter works in a cycle:
