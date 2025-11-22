@@ -4,7 +4,7 @@
 
 This project implements a relatively simple **Command Line Interpreter
 (CLI)** --- a miniature version of the kind found in real operating
-systems.\
+systems.
 Although simplified, it supports many of the same fundamental concepts
 and features.
 
@@ -50,13 +50,13 @@ $ wc -w "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 ### ✍️ Lexical Rules
 
 -   Each command line can contain **up to 512 characters** (excluding
-    newline).\
--   **Uppercase and lowercase** letters are distinct.\
--   Parts of the command are separated by **spaces or tabs**.\
+    newline).
+-   **Uppercase and lowercase** letters are distinct.
+-   Parts of the command are separated by **spaces or tabs**.
 -   **Quoted text** (`" "`) is treated as a single argument, even if it
-    contains spaces.\
+    contains spaces.
 -   The symbols `|`, `<`, and `>` have **special meanings** (pipe and
-    redirection), unless inside quotes.\
+    redirection), unless inside quotes.
 -   If invalid characters or syntax appear, the interpreter prints an
     error message showing where the issue occurred.
 
@@ -64,7 +64,7 @@ $ wc -w "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 
 ## 📥 Command Input and Output Streams
 
-Most commands use an **input/output character stream**.\
+Most commands use an **input/output character stream**.
 Input can come from several sources:
 
 1.  **Keyboard (default)**
@@ -98,7 +98,7 @@ Input can come from several sources:
 
 Output can be redirected as well:
 
--   **Default:** printed to the screen.\
+-   **Default:** printed to the screen.
 
 -   **To file:**
 
@@ -150,7 +150,7 @@ Output can be redirected as well:
 
 ## 🔗 Pipes
 
-You can connect multiple commands using **pipes (`|`)**.\
+You can connect multiple commands using **pipes (`|`)**.
 The output of one command becomes the input of the next.
 
 Example:
@@ -159,8 +159,8 @@ Example:
 time | tr ":" "." | wc -c >time.txt
 ```
 
-Explanation: - `time` prints the current time\
-- `tr` replaces `:` with `.`\
+Explanation: - `time` prints the current time
+- `tr` replaces `:` with `.`
 - `wc` counts the characters and writes the result to `time.txt`
 
 Commands connected by pipes cannot redefine the same input/output (e.g.,
@@ -170,16 +170,16 @@ via redirection or arguments).
 
 ## 🧠 Summary
 
-✅ Written in **C++**\
-✅ Supports **interactive and batch modes**\
-✅ Handles **redirection and piping**\
+✅ Written in **C++**
+✅ Supports **interactive and batch modes**
+✅ Handles **redirection and piping**
 ✅ Includes essential **shell-like commands** (`echo`, `wc`, `tr`,
-etc.)\
+etc.)
 ✅ Easy to extend with new commands in the future
 
 ------------------------------------------------------------------------
 
 ### 🧑‍💻 Author
 
-**Mihailo Mitrović**\
+**Mihailo Mitrović**
 ✉️mihailo3332@gmail.com
